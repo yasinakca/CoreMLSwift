@@ -13,6 +13,8 @@
 		31CF7EFC243F9FD800BE0189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CF7EFA243F9FD800BE0189 /* Main.storyboard */; };
 		31CF7EFE243F9FDA00BE0189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CF7EFD243F9FDA00BE0189 /* Assets.xcassets */; };
 		31CF7F01243F9FDA00BE0189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CF7EFF243F9FDA00BE0189 /* LaunchScreen.storyboard */; };
+		31CF7F09243FA0CE00BE0189 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CF7F08243FA0CE00BE0189 /* select.png */; };
+		31CF7F0B243FA1C300BE0189 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31CF7F0A243FA1C300BE0189 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		31CF7EFD243F9FDA00BE0189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31CF7F00243F9FDA00BE0189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31CF7F02243F9FDA00BE0189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31CF7F08243FA0CE00BE0189 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
+		31CF7F0A243FA1C300BE0189 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				31CF7EFD243F9FDA00BE0189 /* Assets.xcassets */,
 				31CF7EFF243F9FDA00BE0189 /* LaunchScreen.storyboard */,
 				31CF7F02243F9FDA00BE0189 /* Info.plist */,
+				31CF7F08243FA0CE00BE0189 /* select.png */,
+				31CF7F0A243FA1C300BE0189 /* MobileNetV2.mlmodel */,
 			);
 			path = MachineLearning;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31CF7F01243F9FDA00BE0189 /* LaunchScreen.storyboard in Resources */,
+				31CF7F09243FA0CE00BE0189 /* select.png in Resources */,
 				31CF7EFE243F9FDA00BE0189 /* Assets.xcassets in Resources */,
 				31CF7EFC243F9FD800BE0189 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			files = (
 				31CF7EF9243F9FD800BE0189 /* ViewController.swift in Sources */,
 				31CF7EF5243F9FD800BE0189 /* AppDelegate.swift in Sources */,
+				31CF7F0B243FA1C300BE0189 /* MobileNetV2.mlmodel in Sources */,
 				31CF7EF7243F9FD800BE0189 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

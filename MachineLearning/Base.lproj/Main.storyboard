@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MachineLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select.png" translatesAutoresizingMaskIntoConstraints="NO" id="NsM-5u-w8g">
+                                <rect key="frame" x="40" y="110" width="334" height="407"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="407" id="44g-57-M3K"/>
+                                    <constraint firstAttribute="width" constant="334" id="NMP-TS-l5W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSz-X7-PCj">
+                                <rect key="frame" x="35" y="557" width="344" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="zXQ-zR-4xJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmj-Vc-lle">
+                                <rect key="frame" x="103" y="650" width="209" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HkP-am-BFg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="pickClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppQ-NK-nch"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NsM-5u-w8g" firstAttribute="centerX" secondItem="WSz-X7-PCj" secondAttribute="centerX" id="2aD-AM-MZe"/>
+                            <constraint firstItem="Zmj-Vc-lle" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="8ZT-OW-Efb"/>
+                            <constraint firstItem="NsM-5u-w8g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="8u2-g7-mzT"/>
+                            <constraint firstItem="NsM-5u-w8g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Rz7-Wx-EWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zmj-Vc-lle" secondAttribute="bottom" constant="167" id="TvV-8J-2HX"/>
+                            <constraint firstItem="WSz-X7-PCj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Y1A-8e-bAd"/>
+                            <constraint firstItem="Zmj-Vc-lle" firstAttribute="top" secondItem="WSz-X7-PCj" secondAttribute="bottom" constant="44" id="gWG-vv-SZf"/>
+                            <constraint firstItem="NsM-5u-w8g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rDV-rX-hwm"/>
+                            <constraint firstItem="WSz-X7-PCj" firstAttribute="top" secondItem="NsM-5u-w8g" secondAttribute="bottom" constant="40" id="rh8-hO-sVw"/>
+                            <constraint firstItem="WSz-X7-PCj" firstAttribute="centerX" secondItem="Zmj-Vc-lle" secondAttribute="centerX" id="sAb-ex-AIY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="NsM-5u-w8g" id="FJD-ax-jIZ"/>
+                        <outlet property="resultLabel" destination="WSz-X7-PCj" id="orh-a8-3Mm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="select.png" width="264" height="300"/>
+    </resources>
 </document>
